@@ -1,0 +1,18 @@
+{
+    "collaborations" : [
+    {
+        "id":"ptyd",
+        "title": "Prep to Your Door",
+        "description":"50% off your first order of local and zero waste food delivery",
+        "link":"http://preptoyourdoor.com/?code=XJ575MK6",
+        "type":"collab"
+    },
+    {
+        "id":"carpathen",
+        "title": "Carpathen",
+        "description":"Outdoor supply company- check out their DIY irrigation kits",
+        "link":"https://www.carpathen.com/irrigationsystems",
+        "type":"brand"
+    }
+]
+}

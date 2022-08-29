@@ -1,0 +1,38 @@
+{"data":[
+    {
+        "title": "Shoal Creek Nursery",
+        "description":"Local spot with great selection",
+        "link":"https://shoalcreeknursery.com/",
+        "type":"nursery",
+        "id":"shoalcreeks"
+    },
+    {
+        "title": "Great Outdoors Nursery",
+        "description":"Large south Austin nursery. Great for indoor plants",
+        "link":"https://gonursery.com/",
+        "type":"nursery",
+        "id":"greatoutdoorsnursery"
+    },
+    {
+        "title": "Geo Growers",
+        "description":"Bulk soil and compost",
+        "link":"https://geogrowersusa.com/",
+        "type":"nursery",
+        "id":"geogrowers"
+    },
+    {
+        "title": "Lady Bird Johnson Wildflower Center",
+        "description":"Austin botanical garden and events center",
+        "link":"https://www.wildflower.org/",
+        "type":"location",
+        "id":"greatoutdoorsnursery"
+    },
+    {
+        "title": "Zilker Garden",
+        "description":"Botanical garden nestled in Zilker Park",
+        "link":"https://geogrowersusa.com/",
+        "type":"nursery",
+        "id":"geogrowers"
+    }
+
+]}
