@@ -1,47 +1,67 @@
-import Link from 'next/link'
+import { Grid, Row, Card, Text, Link } from "@nextui-org/react";
+
+// import Link from 'next/link'
 import Layout from '../src/components/Layout'
 import styles from '../styles/Home.module.css'
-
+// todo fix colors 
 export default function Home() {
   return (
     <Layout 
       title={<span>Welcome to <br/> The Woodlands Texas Gardener (TWTG)</span>}
       description={"Resources to get you growing!"}
     >
-        <div className={styles.grid}>
-          <Link href="/aboutme">
-            <div  className={styles.card}>
-            <h2>About Me</h2>
-            <p>More about Jillian -me- the grower behind TWTG</p>
-          </div>
-          </Link>
+        <Grid.Container>
+          <Row gap={1} justify="center">
+            <Link href="/aboutme">
+              <Card  className={styles.card}>
+                <Card.Header>
+                <Text>About Me</Text>
+                </Card.Header>
+                <Card.Body>
+                <Text>More about Jillian -me- the grower behind TWTG</Text>
+                </Card.Body>
+            </Card>
+            </Link>
 
-         <Link href="/collaborations"> 
-          <div  className={styles.card}>
-            <h2>Collaborations</h2>
-            <p>Coupons, product reviews, and collaborations</p>
-          </div>
-          </Link>
+            <Link href="/collaborations"> 
+              <Card  className={styles.card}>
+                <Card.Header>
+                <Text>Collaborations</Text>
+                </Card.Header>
+                <Card.Body>
+                <Text>Coupons, product reviews, and collaborations</Text>
+                </Card.Body>
+              </Card>
+            </Link>
+          </Row>
+          <Row gap={1} justify="center">
+            <Link href="/htx-resources">
+            <Card
+              className={styles.card}
+            >
+              <Card.Header>
+              <Text>Houston Area Resources</Text>
+              </Card.Header>
 
-          <Link href="/htx-resources">
-          <div
-            className={styles.card}
-          >
-            <h2>Houston Area Resources</h2>
-            <p>Discover tools, resources, and link for greater Houston area gardeners</p>
-          </div>
-          </Link>
+              <Card.Body>
+              <Text>Discover tools, resources, and link for greater Houston area gardeners</Text>
+              </Card.Body>
+            </Card>
+            </Link>
 
-          <Link href="/ctx-resources">
-          <div className={styles.card}>
-            <h2>Central Texas Resources</h2>
-            <p>
-            Discover tools, resources, and link for Central Texas area gardeners
-            </p>
-          </div>
-          </Link>
+            <Link href="/ctx-resources">
+            <Card className={styles.card}>
+              <Card.Header>
+                <Text>Central Texas Resources</Text>
+              </Card.Header>
+              <Card.Body>
+                <Text>Discover tools, resources, and link for Central Texas area gardeners</Text>
+              </Card.Body>
+            </Card>
+            </Link>
+          </Row>
           
-        </div>
+        </Grid.Container>
     </Layout>
   )
 }
