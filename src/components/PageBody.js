@@ -1,10 +1,11 @@
-import { Card, Grid, Text } from "@nextui-org/react";
+import { Card, Grid, Text, Row } from "@nextui-org/react";
 
 //TODO use the description
 export default function PageBody({data, description}) {
     return (
       <Grid.Container justify="center" fluid gap={1}>
-        <p>{description}</p>
+        <Row justify="center">{description}</Row>
+        <Row justify="center">
         <ul>
           {data.map((cardItem)=> { 
             return <Grid key={cardItem.key}>
@@ -24,6 +25,8 @@ export default function PageBody({data, description}) {
               })
             }
           </ul>
+        </Row>
+
       </Grid.Container>
     )
   }

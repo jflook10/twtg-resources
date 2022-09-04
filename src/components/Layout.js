@@ -34,6 +34,9 @@ export default function Layout({title, description, children}) {
 
       {children}
         <a style={{display: "none"}} href="https://www.flaticon.com/free-icons/sunflower" title="sunflower icons">Sunflower icons created by Freepik - Flaticon</a>
+        <footer>
+          
+        </footer>
     </div>
 
     )
