@@ -14,18 +14,25 @@ export default function Layout({title, description, children}) {
         <title>TWTG Resources</title>
         <meta name="description" content="TWTG resources" />
         <link rel="icon" href="/sunflower.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada&family=Corben"/>
       </Head>
       <header>
         {
-        router.pathname !== "/" && <Link href="/">
+        router.pathname !== "/" &&  <><Link href="/">
         Home
         </Link>
+         <span style={{fontFamily: "Lemonada", marginLeft: 10}}>TWTG</span>
+         </>
         }
       </header>
       <main className={styles.main}>
         <h1 className={styles.title}>
          {title}
         </h1>
+        {router.pathname === "/" && <p style={{fontFamily:"Corben", fontSize: 36,
+    margin: 0}}>
+          The Woodlands Tx Gardener
+        </p>}
 
         <p className={styles.description}>
           {description}

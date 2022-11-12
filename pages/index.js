@@ -7,17 +7,17 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <Layout 
-      title={<span>Welcome to <br/> The Woodlands Texas Gardener (TWTG)</span>}
+      title={<span>TWTG</span>}
       description={"Resources to get you growing!"}
     >
         <Grid.Container>
-          <Row gap={1} justify="center">
+          <Row gap={1} justify="center"  xs wrap={"wrap"}>
             <Link href="/aboutme">
               <Card  className={styles.card}>
                 <Card.Header>
-                <Text>About Me</Text>
+                <Text className={styles.card_title}>About Me</Text>
                 </Card.Header>
-                <Card.Body>
+                <Card.Body className={styles.card_body}>
                 <Text>More about Jillian -me- the grower behind TWTG</Text>
                 </Card.Body>
             </Card>
@@ -26,25 +26,25 @@ export default function Home() {
             <Link href="/collaborations"> 
               <Card  className={styles.card}>
                 <Card.Header>
-                <Text>Collaborations</Text>
+                <Text className={styles.card_title}>Collaborations</Text>
                 </Card.Header>
-                <Card.Body>
+                <Card.Body className={styles.card_body}>
                 <Text>Coupons, product reviews, and collaborations</Text>
                 </Card.Body>
               </Card>
             </Link>
           </Row>
-          <Row gap={1} justify="center">
+          <Row gap={1} justify="center"  xs wrap={"wrap"}>
             <Link href="/htx-resources">
             <Card
               className={styles.card}
             >
               <Card.Header>
-              <Text>Houston Area Resources</Text>
+              <Text className={styles.card_title}>Houston Area Resources</Text>
               </Card.Header>
 
-              <Card.Body>
-              <Text>Discover tools, resources, and link for greater Houston area gardeners</Text>
+              <Card.Body className={styles.card_body}>
+              <Text>Discover tools, resources, and links for Houston area gardeners</Text>
               </Card.Body>
             </Card>
             </Link>
@@ -52,10 +52,10 @@ export default function Home() {
             <Link href="/ctx-resources">
             <Card className={styles.card}>
               <Card.Header>
-                <Text>Central Texas Resources</Text>
+                <Text className={styles.card_title}>Central Texas Resources</Text>
               </Card.Header>
-              <Card.Body>
-                <Text>Discover tools, resources, and link for Central Texas area gardeners</Text>
+              <Card.Body className={styles.card_body}>
+                <Text>Discover tools, resources, and links for Central Texas gardeners</Text>
               </Card.Body>
             </Card>
             </Link>
