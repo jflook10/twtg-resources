@@ -13,7 +13,7 @@ export default function Home() {
         <Grid.Container>
           <Row gap={1} justify="center"  xs wrap={"wrap"}>
             <Link href="/aboutme">
-              <Card  className={styles.card}>
+              <Card  isHoverable className={styles.card}>
                 <Card.Header>
                 <Text className={styles.card_title}>About Me</Text>
                 </Card.Header>
@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
 
             <Link href="/collaborations"> 
-              <Card  className={styles.card}>
+              <Card  isHoverable className={styles.card}>
                 <Card.Header>
                 <Text className={styles.card_title}>Collaborations</Text>
                 </Card.Header>
@@ -36,9 +36,7 @@ export default function Home() {
           </Row>
           <Row gap={1} justify="center"  xs wrap={"wrap"}>
             <Link href="/htx-resources">
-            <Card
-              className={styles.card}
-            >
+            <Card  isHoverable className={styles.card} >
               <Card.Header>
               <Text className={styles.card_title}>Houston Area Resources</Text>
               </Card.Header>
@@ -50,7 +48,7 @@ export default function Home() {
             </Link>
 
             <Link href="/ctx-resources">
-            <Card className={styles.card}>
+            <Card  isHoverable className={styles.card}>
               <Card.Header>
                 <Text className={styles.card_title}>Central Texas Resources</Text>
               </Card.Header>
