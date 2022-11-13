@@ -29,10 +29,10 @@ export default function Layout({title, description, children}) {
         <h1 className={styles.title}>
          {title}
         </h1>
-        {router.pathname === "/" && <p style={{fontFamily:"Corben", fontSize: 36,
+        {router.pathname === "/" && <h4 style={{fontFamily:"Corben",
     margin: 0}}>
           The Woodlands Tx Gardener
-        </p>}
+        </h4>}
 
         <p className={styles.description}>
           {description}
