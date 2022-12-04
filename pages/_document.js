@@ -15,7 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>{CssBaseline.flush()}
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada&family=Corben"/>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Open+Sans"/>
         </Head>
         <body>
           <Main />
