@@ -7,34 +7,10 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <Layout 
-      title={<span>TWTG</span>}
       description={"Resources to get you growing!"}
     >
         <Grid.Container>
-          <Row gap={1} justify="center"  xs wrap={"wrap"}>
-            <Link href="/aboutme">
-              <Card  isHoverable className={styles.card}>
-                <Card.Header>
-                <Text className={styles.card_title}>About Me</Text>
-                </Card.Header>
-                <Card.Body className={styles.card_body}>
-                <Text>More about Jillian -me- the grower behind TWTG</Text>
-                </Card.Body>
-            </Card>
-            </Link>
-
-            <Link href="/collaborations"> 
-              <Card  isHoverable className={styles.card}>
-                <Card.Header>
-                <Text className={styles.card_title}>Collaborations</Text>
-                </Card.Header>
-                <Card.Body className={styles.card_body}>
-                <Text>Coupons, product reviews, and collaborations</Text>
-                </Card.Body>
-              </Card>
-            </Link>
-          </Row>
-          <Row gap={1} justify="center"  xs wrap={"wrap"}>
+        <Row gap={1} justify="center"  xs wrap={"wrap"}>
             <Link href="/htx-resources">
             <Card  isHoverable className={styles.card} >
               <Card.Header>
@@ -58,7 +34,30 @@ export default function Home() {
             </Card>
             </Link>
           </Row>
-          
+          <Row gap={1} justify="center"  xs wrap={"wrap"}>
+            <Link href="/aboutme">
+              <Card  isHoverable className={styles.card}>
+                <Card.Header>
+                <Text className={styles.card_title}>About Me</Text>
+                </Card.Header>
+                <Card.Body className={styles.card_body}>
+                <Text>More about Jillian -me- the grower behind TWTG</Text>
+                </Card.Body>
+            </Card>
+            </Link>
+
+            <Link href="/collaborations"> 
+              <Card  isHoverable className={styles.card}>
+                <Card.Header>
+                <Text className={styles.card_title}>Collaborations</Text>
+                </Card.Header>
+                <Card.Body className={styles.card_body}>
+                <Text>Coupons, product reviews, and collaborations</Text>
+                </Card.Body>
+              </Card>
+            </Link>
+          </Row>
+        
         </Grid.Container>
     </Layout>
   )

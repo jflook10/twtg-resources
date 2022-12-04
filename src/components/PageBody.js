@@ -26,7 +26,7 @@ export default function PageBody({data, description}) {
                 <Card.Header css={{ py: "$1" }}>
                   <Text className={styles.card_title}>{cardItem.title}</Text>
                 </Card.Header>
-                <Card.Body css={{ py: "$1" }}>
+                <Card.Body className={styles.card_body} css={{ py: "$1" }}>
                   <Text>
                     {cardItem.description}
                   </Text>
