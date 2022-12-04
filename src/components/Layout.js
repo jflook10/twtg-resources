@@ -39,11 +39,11 @@ export default function Layout({title, description, children}) {
       </main>
         <footer className={styles.footer}>
           <div className={styles["footer--social"]}>
-            <a href="https://instagram.com/thewoodlandstxgardener/" target={"_blank"}>
+            <a href="https://instagram.com/thewoodlandstxgardener/" target={"_blank"} rel="noreferrer">
               <img className={styles["footer_ig--dark"]} src="/instagram.png"/>
               {/* <img className={styles["footer_ig--light"]} src="/instagram-fff-logo.png"/> */}
             </a>
-            <a href="https://www.facebook.com/TheWoodlandsTxGardener" target={"_blank"}>
+            <a href="https://www.facebook.com/TheWoodlandsTxGardener" target={"_blank"} rel="noreferrer">
               <img className={styles["footer_fb--dark"]} src="/facebook.png"/>
               {/* <img className={styles["footer_fb--light"]} src="/facebook-fff-logo.png"/> */}
             </a>
