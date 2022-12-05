@@ -17,6 +17,7 @@ export default function Layout({title, description, children}) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Open+Sans"/>
       </Head>
       <header className={styles["header--top"]}>
+        <div className={styles["header--align"]}>
         {
         router.pathname !== "/" &&  <><Link href="/">
         Home
@@ -24,7 +25,9 @@ export default function Layout({title, description, children}) {
          <span style={{fontFamily: "Ibarra Real Nova", marginLeft: 10}}>TWTG</span>
          </>
         }
+        </div>
         <img className={styles["header_img"]} src="/twtg-logo.svg" />
+        <div className={styles["header--align"]}></div>
       </header>
       <main className={styles.main}>
         <div className={styles["main--description"]}>
@@ -38,14 +41,12 @@ export default function Layout({title, description, children}) {
         {children}
       </main>
         <footer className={styles.footer}>
-          <div className={styles["footer--social"]}>
-            <a href="https://instagram.com/thewoodlandstxgardener/" target={"_blank"}>
-              <img className={styles["footer_ig--dark"]} src="/instagram.png"/>
-              {/* <img className={styles["footer_ig--light"]} src="/instagram-fff-logo.png"/> */}
+          <div className={styles["footer_container--social"]}>
+            <a href="https://instagram.com/thewoodlandstxgardener/" target={"_blank"} rel="noreferrer">
+              <div className={`${styles["footer_social--ig"]} ${styles["footer_social"]}`}></div>
             </a>
-            <a href="https://www.facebook.com/TheWoodlandsTxGardener" target={"_blank"}>
-              <img className={styles["footer_fb--dark"]} src="/facebook.png"/>
-              {/* <img className={styles["footer_fb--light"]} src="/facebook-fff-logo.png"/> */}
+            <a href="https://www.facebook.com/TheWoodlandsTxGardener" target={"_blank"} rel="noreferrer">
+              <div className={`${styles["footer_social--fb"]} ${styles["footer_social"]}`}></div>
             </a>
           </div>
           <p style={{display: "none"}}><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a></p>
